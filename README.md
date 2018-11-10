@@ -1,4 +1,4 @@
 # texasholdem
 texas holdem in javascript
 ## Author
-Chjun-chi
+Chjun-chi Chiu
