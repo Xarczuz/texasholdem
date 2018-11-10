@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/mystyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- <script src="/js/my.js"></script> -->
+    <script src="/js/texasHoldem.js"></script>
+    <title>Texas Holdem</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Texas Holdem</h1>
+    </header>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="">New Game</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="theBoard">
+            <svg height="650" width="1250px">
+                <ellipse cx="600" cy="300" rx="500" ry="250" style="fill:green;stroke:rgba(165, 42, 42, 0.87);stroke-width:20" />
+                <text id="texasHoldem" x="550" y="200" fill="red">Texas Holdem</text>
+
+                <text id="player1" x="270" y="400">Player 1</text>
+                <text class="winners" id="player1Win" x="270" y="420"></text>
+                <image id="player1Card1" x="160px" y="380px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player1Card2" x="210px" y="380px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player2" x="510" y="500">Player 2</text>
+                <text class="winners" id="player2Win" x="510" y="520"></text>
+                <image id="player2Card1" x="400px" y="480px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player2Card2" x="450px" y="480px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player3" x="770" y="500">Player 3</text>
+                <text class="winners" id="player3Win" x="770" y="520"></text>
+                <image id="player3Card1" x="660px" y="480px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player3Card2" x="710px" y="480px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player4" x="970" y="400">Player 4</text>
+                <text class="winners" id="player4Win" x="970" y="420"></text>
+                <image id="player4Card1" x="860px" y="380px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player4Card2" x="910px" y="380px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player5" x="970" y="100">Player 5</text>
+                <text class="winners" id="player5Win" x="970" y="120"></text>
+                <image id="player5Card1" x="860px" y="80px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player5Card2" x="910px" y="80px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player6" x="770" y="50">Player 6</text>
+                <text class="winners" id="player6Win" x="770" y="70"></text>
+                <image id="player6Card1" x="660px" y="30px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player6Card2" x="710px" y="30px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player7" x="510" y="50">Player 7</text>
+                <text class="winners" id="player7Win" x="510" y="70"></text>
+                <image id="player7Card1" x="400px" y="30px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player7Card2" x="450px" y="30px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player8" x="270" y="130">Player 8</text>
+                <text class="winners" id="player8Win" x="270" y="150"></text>
+                <image id="player8Card1" x="160px" y="110px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player8Card2" x="210px" y="110px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player9" x="170" y="270">Player 9</text>
+                <text class="winners" id="player9Win" x="170" y="290"></text>
+                <image id="player9Card1" x="60px" y="250px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player9Card2" x="110px" y="250px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <text id="player10" x="1130" y="270">Player 10</text>
+                <text class="winners" id="player10Win" x="1130" y="290"></text>
+                <image id="player10Card1" x="1020px" y="250px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="player10Card2" x="1070px" y="250px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+
+                <image id="flopCard1" x="510px" y="210px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="flopCard2" x="560px" y="210px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="flopCard3" x="610px" y="210px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="theTurnCard" x="660px" y="210px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+                <image id="theRiverCard" x="710px" y="210px" height="85px" width="60px" href="/image/png/gray_back.png"></image>
+            </svg>
+        </div>
+        <div class="buttons">
+            <button class="call" id="call" value="call," onclick="call()">Call</button>
+            <button class="fold" id="fold" value="fold," onclick="fold()">Fold</button>
+            <button class="call" id="callFlop" value="call," onclick="callFlop()">CallFlop</button>
+            <button class="fold" id="foldFlop" value="fold," onclick="foldFlop()">FoldFlop</button>
+            <button class="call" id="callTurn"  value="call," onclick="callTurn()">CallTurn</button>
+            <button class="fold" id="foldTurn"  value="fold," onclick="foldTurn()">FoldTurn</button>
+            <button class="call" id="callRiver"  value="call," onclick="callRiver()">CallRiver</button>
+            <button class="fold" id="foldRiver"  value="fold," onclick="foldRiver()">FoldRiver</button>
+        </div>
+    </section>
+    <section id="contact">
+    </section>
+</body>
+
+</html>

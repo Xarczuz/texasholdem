@@ -1,0 +1,49 @@
+nav {
+  border: 2px solid rgb(36, 159, 207);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 85%;
+  margin: auto;
+}
+
+div.card {
+  width: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+img {
+  height: 85px;
+  width: 60px;
+}
+
+.theBoard {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+svg {
+  margin: auto;
+}
+
+.call {
+  position: absolute;
+  margin-left: 40%;
+  visibility: hidden;
+}
+
+.fold {
+  position: absolute;
+  margin-left: 50%;
+  visibility: hidden;
+}
+.buttons {
+  width: 100%;
+}
+
+.winners{
+  fill:blue;
+  font-weight: bold;
+  
+}
